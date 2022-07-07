@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80674A38-395B-4430-B7FC-06CD01E3F382}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bibliotheque</RootNamespace>
+    <AssemblyName>Bibliotheque</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Adherent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Adherent.Designer.cs">
+      <DependentUpon>Ajouter_Adherent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Bibliothecaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Bibliothecaire.Designer.cs">
+      <DependentUpon>Ajouter_Bibliothecaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Emprunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Emprunt.Designer.cs">
+      <DependentUpon>Ajouter_Emprunt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Livre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Livre.Designer.cs">
+      <DependentUpon>Ajouter_Livre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bibliotheque_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bibliotheque_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerer_Adherent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerer_Adherent.Designer.cs">
+      <DependentUpon>Gerer_Adherent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerer_Bibliothecaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerer_Bibliothecaire.Designer.cs">
+      <DependentUpon>Gerer_Bibliothecaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerer_Emprunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerer_Emprunt.Designer.cs">
+      <DependentUpon>Gerer_Emprunt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerer_Livre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerer_Livre.Designer.cs">
+      <DependentUpon>Gerer_Livre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier_Supprimer_Adherent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier_Supprimer_Adherent.Designer.cs">
+      <DependentUpon>Modifier_Supprimer_Adherent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier_Supprimer_Bibliothecaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier_Supprimer_Bibliothecaire.Designer.cs">
+      <DependentUpon>Modifier_Supprimer_Bibliothecaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Adherent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Adherent.Designer.cs">
+      <DependentUpon>Report_Adherent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Adherent2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report_Adherent2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report_Bibliothecaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Bibliothecaire.Designer.cs">
+      <DependentUpon>Report_Bibliothecaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Bibliothecaire2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report_Bibliothecaire2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report_Emprunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Emprunt.Designer.cs">
+      <DependentUpon>Report_Emprunt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Emprunt2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report_Emprunt2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report_Livre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Livre.Designer.cs">
+      <DependentUpon>Report_Livre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Livre2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report_Livre2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Supprimer_Emprunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supprimer_Emprunt.Designer.cs">
+      <DependentUpon>Supprimer_Emprunt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier_Supprimer_Livre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier_Supprimer_Livre.Designer.cs">
+      <DependentUpon>Modifier_Supprimer_Livre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restauration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restauration.Designer.cs">
+      <DependentUpon>Restauration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Adherent.resx">
+      <DependentUpon>Ajouter_Adherent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Bibliothecaire.resx">
+      <DependentUpon>Ajouter_Bibliothecaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Emprunt.resx">
+      <DependentUpon>Ajouter_Emprunt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Livre.resx">
+      <DependentUpon>Ajouter_Livre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerer_Adherent.resx">
+      <DependentUpon>Gerer_Adherent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerer_Bibliothecaire.resx">
+      <DependentUpon>Gerer_Bibliothecaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerer_Emprunt.resx">
+      <DependentUpon>Gerer_Emprunt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerer_Livre.resx">
+      <DependentUpon>Gerer_Livre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifier_Supprimer_Adherent.resx">
+      <DependentUpon>Modifier_Supprimer_Adherent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifier_Supprimer_Bibliothecaire.resx">
+      <DependentUpon>Modifier_Supprimer_Bibliothecaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Adherent.resx">
+      <DependentUpon>Report_Adherent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Adherent2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report_Adherent2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Bibliothecaire.resx">
+      <DependentUpon>Report_Bibliothecaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Bibliothecaire2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report_Bibliothecaire2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Emprunt.resx">
+      <DependentUpon>Report_Emprunt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Emprunt2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report_Emprunt2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Livre.resx">
+      <DependentUpon>Report_Livre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Livre2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report_Livre2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supprimer_Emprunt.resx">
+      <DependentUpon>Supprimer_Emprunt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifier_Supprimer_Livre.resx">
+      <DependentUpon>Modifier_Supprimer_Livre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Restauration.resx">
+      <DependentUpon>Restauration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Bibliotheque_DBDataSet.xsc">
+      <DependentUpon>Bibliotheque_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bibliotheque_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bibliotheque_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bibliotheque_DBDataSet.xss">
+      <DependentUpon>Bibliotheque_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
